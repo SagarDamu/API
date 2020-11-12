@@ -27,7 +27,7 @@ public class DepartmentController {
 			return "Department Addition Failed";
 	}
 
-	@RequestMapping("/deletedepartment")
+	@RequestMapping("/deletedepartment/{id}")
 	public String deleteDepartment(@PathVariable int id) {
 		if (departmentservice.delete(id))
 			return "Department Deleted";

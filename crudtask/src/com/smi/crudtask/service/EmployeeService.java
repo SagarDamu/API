@@ -26,7 +26,7 @@ public class EmployeeService {
 		Transaction transaction = session.beginTransaction();
 		boolean b = false;
 		try {
-			if (session.save(employee) != null) {
+			if(session.save(employee)!= null) {
 				b = true;
 			}
 			transaction.commit();
@@ -55,7 +55,7 @@ public class EmployeeService {
 
 	public List<Employee> selectEmployee(int id) {
 
-		List<Employee> employeeList = new ArrayList<Employee>();
+		List<Employee> employeeList = new ArrayList();
 		Criteria criteria = session.createCriteria(Employee.class);
 		criteria.add(Restrictions.eq("employeeId", id));
 		employeeList = criteria.list();

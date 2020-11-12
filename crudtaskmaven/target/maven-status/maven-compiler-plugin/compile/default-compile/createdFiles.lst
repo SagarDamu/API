@@ -1,0 +1,15 @@
+com\smi\crudtask\spring\service\EmployeeService.class
+com\smi\crudtask\spring\dao\EmployeeDaoImplementation.class
+com\smi\crudtask\spring\config\AppConfig.class
+com\smi\crudtask\spring\service\DepartmentService.class
+com\smi\crudtask\spring\config\WebAppInitializer.class
+com\smi\crudtask\spring\dao\DepartmentDaoImplement.class
+com\smi\crudtask\spring\service\DeparmentServiceImplementation.class
+com\smi\crudtask\spring\service\EmployeeServiceImplementation.class
+com\smi\crudtask\spring\model\Department.class
+com\smi\crudtask\spring\controller\DepartmentController.class
+com\smi\crudtask\spring\config\WebConfig.class
+com\smi\crudtask\spring\dao\DepartmentDao.class
+com\smi\crudtask\spring\dao\EmployeeDao.class
+com\smi\crudtask\spring\controller\EmployeeController.class
+com\smi\crudtask\spring\model\Employee.class

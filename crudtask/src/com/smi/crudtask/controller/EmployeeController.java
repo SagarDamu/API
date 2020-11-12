@@ -26,7 +26,7 @@ public class EmployeeController {
 	@Qualifier("employee")
 	EmployeeService employeeService;
 
-	@RequestMapping(value = "/insertemployee", consumes = { MediaType.APPLICATION_JSON_VALUE },method = RequestMethod.POST)
+	@RequestMapping(value = "/insertemployee", produces = "application/json",method = RequestMethod.POST)
 	public String insertEmployee(@RequestBody Employee employee) {
 		if (employeeService.insert(employee))
 			return "Inserted";
@@ -34,7 +34,7 @@ public class EmployeeController {
 			return "Insertion Failed";
 	}
 
-	@RequestMapping(value = "/deleteemployee/{id}",produces = "application/json",method = RequestMethod.POST)
+	@RequestMapping(value = "/deleteemployee/{id}",produces = "application/json",method = RequestMethod.GET)
 	public String deleteEmployee(@PathVariable int id) {
 		if (employeeService.delete(id))
 			return "Data Deleted";
